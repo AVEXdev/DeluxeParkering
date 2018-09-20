@@ -8,6 +8,7 @@
     <meta name="author" content="Alexander Johansson">
     <title>Deluxe Parkering</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Kalam|Notable" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -36,30 +37,64 @@
           <p>
             Varför har vi valt Web-app till Deluxe Parkering?
             En Web-app är gjord med HTML, CSS och Javascript.<br> </br> Den blir enkelt att både bygge och underhålla, samt att det blir billigare för företag och andra att
-            köpa en hemsida som byggs som en web-app. Man kan också bygga en kod som fungerar i alla mobiler (width=device-width).
+            köpa en hemsida som byggs som en web-app.
           <div>
           </div>
-            Det krävs en webbläsare och användaren måste ha adressen i webläsaren för att komma åt web-appen.
-            Eftersom det här är det lättare sättet att göra en hemsida så är det en bra början för att lära sig. <br> </br>
+            Det krävs en webbläsare och användaren måste ha adressen i webläsaren för att komma åt web-appen. Web-appen distrubiteras alltså ej i App Store eller Google Play Store.
+            Den har därav också en och samma kodbas som styr för alla apparater. Det behövs även ingen validerings process som kan sakta ner projektet att komma ut då det är
+            web basserat.
+            <br> </br>
             Eftersom det finns biltvätt och service så kanske
-            inte målgruppen alltid kommer sitta med mobilen för det, de kommer då att boka framförallt på datorn och en tid i framtiden, så en webapp skulle
-            vara ett bra värde för sidan.
+            inte målgruppen alltid kommer sitta med mobilen för det, de kommer då att boka framförallt på datorn och en tid framöver, så en webapp för Deluxe Parkering skulle vara
+            helt okej om man vill underhålla en enkel websida för att boka tider och service.
+            <br> </br>
+            Ska man lagra information eller har mer responsiv app så kanske Hybrid eller Native-app kan vara alternativ.
           </p>
           <p class="dark1">
             Om man väljer att använda en Native-app eller Hybrid-app istället för Web-app, så är t ex Hybrid-appen även lätt att bygga då det är byggt på HTML, CSS & Javascript.
-            Det du får med Hybrid-app jämnt emot Web-appen är att appen byggs för alla plattformar, exempelvis Xamarin som är helt cross-platform UI toolkit för .NET devs.
+            Det du får med Hybrid-app jämnt emot Web-appen är att appen byggs för alla plattformar.
+            Du kommer åt appens funktioner som kamera eller GPS, du kommer som sagt åt båda platformarna App Store och Google Play Store med samma kodbas, vilket också gör det
+            billigare att underhålla och uppdatera.
             <br> </br>
-            Du behöver då också ingen browser som du behöver med Web-appen med adressen i webbläsaren. Du kommer även in i mobilens funktioner såsom lagringen eller kameran.
-            Det är dyrare än att jobba med vanlig Web-app då man använder en wrapper, men det är för att man är i behov av 3rd party lösningar.
+            Hybrid-appar kan funka utan internetanslutning, exempelvis ifall det är en informationsapp som inte behöver uppdateras i real-tid så kan man lätt pusha uppdateringar
+            istället för att ha direkt internetanslutning.
+            Historiskt sätt så har prestandad jämnemot Native-app varit sämre, då det är beroende på kvalitén av och vad apparaten är kababel till. Men eftersom mobiler nu blir
+            så extremt mycket starkare och bättre så är mellanrummet minskad enormt.
+            Då det är en cross-platofrm kodbas så kan det vara svårt att få en Native-feel av appen då den samtidigt ska anpassas och justeras för båda platformerna.
+            <br> </br>
+            Här kan man med Deluxe Parkering ha samma enkelthet med kodbasen för båda plattformarna som Web-appen, men har mer tillgång till mobilens funktioner. Om man vill att
+            appen ska kunna spåra dig via GPS för att se vilka parkeringsplatser i närheten som är tillgängliga, eller var den närmsta biltvätten finns och guide'a dig dit.
+
             <br> </br>
             --------------------------------------------------------------------------------
             <br> </br>
-            Native-app däremot är mycket dyrare än både Web/Hybrid-app. Det är svårare programspråk som krävs bättre och erfarna utvecklare, därav blir det även dyrare och
-            används inte ofta för enklare appar.
+            Native-app är skapta för specifika apparater i ett specifikt programmeringsspråk, t ex en app skapad för iOS kan ej existera i Google Play Store eller fungera på en
+            Android mobil. Exempelvis så är iOs byggda i Swift eller Objective C medans Android är bygga i Java. Native-appen är kababel till att komma åt mobilens funktioner fullt
+            ut samt API's. Funktioner såsom kamera, GPS eller kontakt lista kan tas full kontroll över. Native-appen är väldigt snabb, responsiv och ger en stark upplevelse till
+            användaren. Du behöver inte ha en internetanslutning till att spela spel eller annat.
+            <br> </br>
+            Svårigheter med Native-app är ifall du ska ha din app på båda platformarna iOS och Android. Det kan bli mycket jobb att underhålla och uppdatera koden samt app store samtidigt
+            som man vill kunna ge samma upplevelse på båda platformarna, då många utvecklare specialiserar sig på en plattform så är två utvecklare för varsinn platform inte ovanligt.
+            Med detta så blir det väldigt kostsamt med flera utvecklare och underhålla allting på två olika plattformer.
+
             <br> </br>
             Native-appar är väldigt responsiva och snabba, mycket lättare och enklare att begripa sig på hur appen funkar och mobiliteten.
             Den kommer åt alla funktioner och kräver ingen internetanslutning (om appen inte är beroende av det).
             Det kan medfölja även större säkerhet i att behålla och kryptera information, såsom bank-appar, Swish, Bank-id.
+            Att förvara data på Native-appen kan vara stor fördel så man ger en bättre UX till användaren så denna har informationen sparad i appen och tillgänglig när information
+            behövs.
+            <br> </br>
+            Man kan tycka att Native-app är överdrivet mycket spenderat för en app till parkering, service och biltvätt. Men om man vill ha ett väldigt sofistikerat, väldigt snabb och
+            responsiv upplevelse för användaren, samt kunna lagra information samt komma åt apparentens funktioner och API's, så kanske Native-app kan vara något. Exempelvis så
+            om man har ett sofistikerat parkerings och biltvätts system, som då appen söker efter parkeringsplats eller biltvätt i det område du antingen befinner dig i eller det
+            närmsta från din position, guide'a dig dit, och även då med hjälp och t ex mindre skylt på parkeringsplatsen som man kan scanna en QR kod, som appen identifierar,
+            sedan går till lagringen av ditt fordons registreringsnummer eller om man skriver in en ny första gångs parkering med ny bil, registrera parkeringen eller biltvätten,
+            och göra en automatiskt betalningen vid avgång eller använding vid biltvätt. Man kan lätt trycka 'Avsluta parkering' när man är klar, sedan t ex kan betalningen ske via
+            Swish då appen kan kopplas till den appen såsom andra appar idag kan för betalnig.
+            <br> </br>
+            Men det mesta här kan man ha i en Hybrid-app, då man kanske inte med Deluxe Parkering behöver uppdateringar som sker i real-tid, och det räcker med uppdateringar var 5e
+            sekund. Det här är något man får tänka till hur man vill ha med allt-i-ett med Native app, eller köra enklare Web-app, eller bästa av två världarna Hybrid-appen, det beror
+            på hur Deluxe Parkering vill ha med sitt system, som de får avgöra hur avgörande det är med investeringen i appen jämntemot möjligheterna, fördelarna och nackdelarna.
           </p>
         </article>
 
@@ -67,16 +102,6 @@
       </div>
     </section>
     <br> </br>
-
-    <section id="newsletter">
-      <div class="container">
-          <h1>Prenumerera på vårat nyhetsbrev för nyheter och bonusar</h1>
-            <form>
-            <input type="email" placeholder="Skriv in email...">
-            <button type="submit" class="button_1">Prenumerera</button>
-          </form>
-      </div>
-    </section>
 
     <footer>
       <p>Deluxe Parkering, Copyright &copy; 2018</p>
